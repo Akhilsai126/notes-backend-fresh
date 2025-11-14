@@ -10,10 +10,11 @@ const app = express();
 // ✅ CORS - allow requests from local dev and production frontend
 app.use(cors({
     origin: [
-        "https://thunderous-stroopwafel-61253e.netlify.app/" // <-- new frontend
+        "https://thunderous-stroopwafel-61253e.netlify.app" // NO trailing slash
     ],
     methods: ["GET", "POST"]
 }));
+
 
 app.use(express.json());
 

@@ -12,7 +12,7 @@ app.use(cors({
     origin: [
         "http://localhost:3000", // local frontend
         "http://localhost:3004", // another possible local port
-        "https://notesviewer.netlify.app" // production frontend
+        "https://preeminent-churros-360079.netlify.app/" // production frontend
     ],
     methods: ["GET", "POST"]
 }));

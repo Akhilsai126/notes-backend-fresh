@@ -10,9 +10,6 @@ const app = express();
 // ✅ CORS - allow requests from local dev and production frontend
 app.use(cors({
     origin: [
-        "http://localhost:3000",
-        "http://localhost:3004",
-        "https://notesviewer.netlify.app",
         "https://mellow-brioche-a27b39.netlify.app" // <-- new frontend
     ],
     methods: ["GET", "POST"]

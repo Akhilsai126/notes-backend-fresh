@@ -10,12 +10,14 @@ const app = express();
 // ✅ CORS - allow requests from local dev and production frontend
 app.use(cors({
     origin: [
-        "http://localhost:3000", // local frontend
-        "http://localhost:3004", // another possible local port
-        "https://preeminent-churros-360079.netlify.app/" // production frontend
+        "http://localhost:3000",
+        "http://localhost:3004",
+        "https://notesviewer.netlify.app",
+        "https://mellow-brioche-a27b39.netlify.app" // <-- new frontend
     ],
     methods: ["GET", "POST"]
 }));
+
 app.use(express.json());
 
 // 🔹 Connect to Aiven MySQL (Option 1: ignore self-signed SSL)
